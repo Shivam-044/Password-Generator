@@ -1,28 +1,29 @@
-# 🔐 Password Generator
+# 🔐 Cryptographic Password Generator
 
-A simple yet effective Python-based command-line tool to generate secure and random passwords.
+A high-entropy, cryptographically secure password generation utility built with Python. This tool moves beyond standard pseudo-random generators by leveraging the `secrets` module for industry-standard security.
 
-This project demonstrates the use of Python's built-in libraries to create unpredictable passwords that can be used for better security practices.
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
+[![Security](https://img.shields.io/badge/Security-Cryptographic-red?style=flat)](https://docs.python.org/3/library/secrets.html)
 
----
+## 🌟 Why Cryptographic?
+Most basic password generators use the `random` module, which is based on the Mersenne Twister algorithm. While fast, it is **deterministic** and predictable. 
 
-## 🚀 Features
+This project uses the **`secrets` module**, which generates tokens suitable for managing secrets such as passwords, account authentication, and security tokens. It utilizes the highest quality of randomness provided by the underlying operating system.
 
-- Generates strong random passwords
-- Includes uppercase & lowercase letters
-- Includes digits and special characters
-- User-defined password length
-
----
+## ✨ Key Features
+- **CS-PRNG:** Uses Cryptographically Secure Pseudo-Random Number Generators.
+- **Complexity Enforcement:** Guaranteed inclusion of:
+  - Upper & Lowercase letters
+  - Digits (0-9)
+  - Special characters (!@#$%^&*)
+- **Input Validation:** Prevents crashes from invalid user input.
+- **Customizable Length:** Generates secure strings of any user-defined length (recommended 16+).
 
 ## 🛠️ Tech Stack
+- **Language:** Python 3.x
+- **Libraries:** `secrets`, `string` (Standard Library - no external dependencies required)
 
-- Python (standard libraries: `random`, `string`)
-
----
-
-## ▶️ How to Run
-
-1. Clone the repository:
+## 📂 Installation & Usage
+1. **Clone the Repository**
    ```bash
-   git clone https://github.com/Shivam-044/password-generator.git
+   git clone [https://github.com/Shivam-044/Password-Generator.git](https://github.com/Shivam-044/Password-Generator.git)
